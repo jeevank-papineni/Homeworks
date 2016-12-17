@@ -1,0 +1,67 @@
+1) Static binding, dynamic binding in java?
+2) why to use an abstract class and interface?
+3) examples of Abstract classes and interfaces?
+
+
+
+1.static binding:
++++++++++++++++++
+static binding is also called early binding, method overloading is the best example of static binding.
+>> In static binding method resolution
+always taken care by compiler based on reference type.
+
+Dynamic binding:
+++++++++++++++++++
+Dynamic binding is also called as late binding, method overriding is the best example for dynamic binding
+>> In Dynamic binding method resolution always taken care by JVM in runtime.
+
+2.Abstract class:
+++++++++++++++++
+A class that is declared with Abstract keyword is said to be known as abstract class
+
+>> an abstract class can not be instantaited.
+
+>> through abstraction we can hide implementation details and exhibit the essential details to the user.
+
+>> A class is said to abstract class if it has atleast one abstract method.
+
+>> for accessing the methods in abstract classes we need to define them in their subclasses.
+
+ex: Abstract class C
+{
+
+}
+
+3.Interface:
++++++++++++
+>> Interface is a blueprint of a java class to acheive fully abstraction.
+
+>> similar to abstract class interface also cannot be instantiated.
+
+>>we can acheive multiple inheritance using interface.
+
+Difference between Abstract class and Interface
++++++++++++++++++++++++++++++++++++
+Abstract class:
+----------------
+>> Abstract class can have atleast one abstract method.
+>> It doesnot support multiple inheritance.
+>> it can contain final,non-final,static and non static variables.
+>> It can provide implementation of interface
+>>ex:
+     public abstract class Engine
+        {
+         public abstract void v6()
+        }
+
+Interface:
+++++++++++
+>> Interface can have only abstract classes
+>> it supports Multiple inheritance
+>> it allows only static and final variables.
+>> it can not provide implementation to abstract classes
+>> ex:
+         public interface car
+         {
+         abstract void engine();
+         }
